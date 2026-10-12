@@ -1,0 +1,63 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devPath": "http://localhost:5173/",
+    "beforeBuildCommand": "npm run build",
+    "distDir": "../dist",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "BritSlide",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "fs": {
+        "readFile": true,
+        "writeFile": true,
+        "readDir": true,
+        "scope": ["**"]
+      },
+      "dialog": {
+        "open": true,
+        "save": true,
+        "message": true,
+        "ask": true,
+        "confirm": true
+      },
+      "path": {
+        "all": true
+      },
+      "shell": {
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.britslide.app",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico",
+        "icons/icon.png"
+      ]
+    },
+    "windows": [
+      {
+        "title": "BritSlide - Desktop",
+        "width": 1366,
+        "height": 850,
+        "minWidth": 1024,
+        "minHeight": 700,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  }
+}

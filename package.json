@@ -1,0 +1,36 @@
+{
+  "name": "your-sheets",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tauri": "tauri dev",
+    "desktop:dev": "tauri dev",
+    "desktop:build": "powershell -ExecutionPolicy Bypass -File ./build-desktop.ps1"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.5.0",
+    "immer": "^9.0.0",
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-data-grid": "^7.0.0-can",
+    "react-dom": "^18.3.0",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.6.3",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^10.10.0",
+    "eslint-config-next": "^16.3.5",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.5.0",
+    "vite": "^5.0.12"
+  }
+}
